@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:hsqldb:hsql://localhost/testdb
+    username: sa

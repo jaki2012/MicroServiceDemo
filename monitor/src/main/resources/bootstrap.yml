@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: monitor
+
+
+eureka:
+  instance:
+    nonSercurePort: ${server.port:8989}
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
